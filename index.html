@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denzel Matsolo - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Denzel</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Denzel Joao Domingos Matsolo</span></h1>
+            <p class="subtitle">Web Developer & Designer</p>
+            <a href="#projects" class="btn primary">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate Computer Science student at Guru Kashi University. I specialize in building clean, responsive, and interactive web applications. This portfolio showcases my skills and projects developed during my academic journey.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>Responsive Design</span><span>UI/UX Design</span>
+            <span>DOM Manipulation</span><span>Git & GitHub</span>
+            <span>Bootstrap</span><span>Web Development</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>Fully responsive portfolio with dark/light mode, smooth navigation and professional design.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Live Weather Dashboard</h3>
+                <div id="weather-app">
+                    <div class="weather-search">
+                        <input type="text" id="city-input" placeholder="Enter city name" value="Talwandi Sabo">
+                        <button onclick="getWeather()">Search</button>
+                    </div>
+                    <div id="weather-result"></div>
+                </div>
+            </div>
+
+            <!-- New Todo List -->
+            <div class="project-card" style="grid-column: 1 / -1;">
+                <h3>Task Manager (To-Do List)</h3>
+                <div id="todo-app">
+                    <div class="todo-input">
+                        <input type="text" id="task-input" placeholder="Add a new task...">
+                        <button onclick="addTask()">Add Task</button>
+                    </div>
+                    <ul id="task-list"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn primary">Send Message</button>
+        </form>
+        <p style="text-align:center; margin-top:25px;">📞 +91 78888 34957</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Denzel Joao Domingos Matsolo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
